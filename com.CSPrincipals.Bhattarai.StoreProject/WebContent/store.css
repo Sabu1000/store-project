@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+#title {
+    font-size: 3.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#slogan {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navBar, .name {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navBar:hover, .name:hover {
+    color: #ffd700;
+}
+
+#numberOfCartItems {
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#cartIcon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Left and Right Side Styles */
+#leftSide, #rightSide {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+#middle {
+    width: 35%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image Styling */
+.pics {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures all images fit into the specified dimensions */
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pics:hover {
+    transform: scale(1.1); /* Adds a zoom effect on hover */
+}
+
+/* Cart Button Styling */
+#cartButton {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#cartButton:hover {
+    background: linear-gradient(45deg, #ff5252, #ff7979);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ccc;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leftSide, #middle, #rightSide {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

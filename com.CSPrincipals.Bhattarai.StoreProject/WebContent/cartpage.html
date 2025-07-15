@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartpage.css" type="text/css">
+    <script src="store.js" type="text/javascript" defer></script>
+</head>
+<body onload="printSessionStorage()">
+    <!-- Header Section -->
+    <header>
+        <h1 id="title">The Phone Spot</h1>
+        <h4 id="slogan">Best phones for the best prices</h4>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="store.html" class="navBar">Products</a>
+        <a href="storelocation.html" class="navBar">Store Location and Hours</a>
+        <a href="cartpage.html" class="navBar">Checkout</a>
+        <p id="numberOfCartItemsTwo">
+            Total Items: <span id="totalItems">0</span>
+            <img src="images/cart.png" id="cartIcon" alt="Cart Icon">
+        </p>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="cartDetails">
+            <!-- Table to display cart items -->
+            <table id="table">
+                <!-- Cart details will be dynamically populated by JavaScript -->
+            </table>
+
+            <!-- Total Price -->
+            <p id="totalPriceTwo">Total: </p>
+
+            <!-- Complete Order Button -->
+            <button id="completeOrder" onclick="completeOrder()">Complete Order</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Thank you for shopping at The Phone Store!</p>
+    </footer>
+</body>
+</html>

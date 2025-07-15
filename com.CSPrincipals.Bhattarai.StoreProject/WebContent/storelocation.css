@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+#title {
+    font-size: 3.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#slogan {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navBar {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navBar:hover {
+    color: #ffd700;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.clock {
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#operation {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#openClose {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; /* Green background for open */
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#openClose:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Store Picture Section */
+#storePic {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#mainPic {
+    width: 80%;
+    max-width: 600px;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+
+/* Store Hours Table */
+#tableDiv {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Google Maps Section */
+#mapsDiv {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#mapsPic {
+    width: 90%;
+    max-width: 800px;
+    border: none;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ccc;
+    font-size: 1rem;
+    color: #666;
+}

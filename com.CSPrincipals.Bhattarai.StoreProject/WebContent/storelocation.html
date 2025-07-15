@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Hours and Location</title>
+    <link type="text/css" rel="stylesheet" href="storelocation.css" />
+    <script type="text/javascript" src="storelocation.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 id="title">The Phone Store</h1>
+        <h4 id="slogan">Find Us and See When We're Open</h4>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="store.html" class="navBar">Products</a>
+        <a href="storelocation.html" class="navBar">Store Location and Hours</a>
+        <a href="cartpage.html" class="navBar">Checkout</a>
+    </nav>
+
+    <!-- Clock Section -->
+    <div class="clock-container">
+        <div class="clock">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span id="timeofDay">AM</span>
+        </div>
+        <div id="operation">
+            <span id="openClose">We are almost open</span>
+        </div>
+    </div>
+
+    <!-- Store Picture -->
+    <div id="storePic">
+        <img src="images/phonestore.jpg" id="mainPic" alt="Phone Store Image">
+    </div>
+
+    <!-- Store Hours Table -->
+    <div id="tableDiv">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:00AM to 10:00PM</td>
+                    <td>10:00AM to 10:00PM</td>
+                    <td>10:00AM to 10:00PM</td>
+                    <td>10:00AM to 10:00PM</td>
+                    <td>10:00AM to 10:00PM</td>
+                    <td>10:00AM to 9:00PM</td>
+                    <td>10:00AM to 9:00PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Google Maps Section -->
+    <div id="mapsDiv">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!4v1668457803436!6m8!1m7!1sugZ_NdHog6ecRULFSTZFmw!2m2!1d37.40988820512034!2d-121.9463781049607!3f145.06103385774915!4f22.38913468582318!5f0.7820865974627469"
+            width="800" height="600" style="border:0;" id="mapsPic" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Thank you for visiting The Phone Store!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Store</title>
+    <link rel="stylesheet" href="store.css" type="text/css">
+    <script src="store.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 id="title">The Phone Store</h1>
+        <h4 id="slogan">Best phones for the best prices</h4>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="store.html" class="name">Products</a>
+        <a href="storelocation.html" class="navBar">Store Location and Hours</a>
+        <a href="cartpage.html" class="navBar">Checkout</a>
+		<p id="numberOfCartItems">
+			Number of Items: <span id="totalItems">0</span>
+			<img src="images/cart.png" id="cartIcon" alt="Cart Icon">
+		</p>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Left Side Section -->
+        <section id="leftSide">
+            <img src="images/iphone14.jpg" name="Iphone 14" id="itemOne" class="pics" 
+                onmouseover="growOne()" onmouseleave="shrinkOne()" 
+                onclick="display(this), iphone14Desc(), storeSessionStorage(this)" 
+                alt="iPhone 14">
+            <img src="images/iphone13.jpg" name="Iphone 13" id="itemTwo" class="pics" 
+                onmouseover="growTwo()" onmouseleave="shrinkTwo()" 
+                onclick="display(this), iphone13Desc(), storeSessionStorage(this)" 
+                alt="iPhone 13">
+            <img src="images/iphone12.jpg" name="Iphone 12" id="itemThree" class="pics" 
+                onmouseover="growThree()" onmouseleave="shrinkThree()" 
+                onclick="display(this), iphone12Desc(), storeSessionStorage(this)" 
+                alt="iPhone 12">
+            <img src="images/iphone11.jpg" name="Iphone 11" id="itemFour" class="pics" 
+                onmouseover="growFour()" onmouseleave="shrinkFour()" 
+                onclick="display(this), iphone11Desc(), storeSessionStorage(this)" 
+                alt="iPhone 11">
+        </section>
+
+        <!-- Middle Section -->
+        <section id="middle">
+            <p id="bigPic"></p>
+            <p id="caption">Phone</p>
+            <p id="cost">Cost:</p>
+            <button id="cartButton" onclick="addToCart(), printSessionStorage(), nothing()">Add To Cart</button>
+        </section>
+
+        <!-- Right Side Section -->
+        <section id="rightSide">
+            <img src="images/samsungs22.jpg" name="Samsung S22" id="itemFive" class="pics" 
+                onmouseover="growFive()" onmouseleave="shrinkFive()" 
+                onclick="display(this), samsungs22Desc(), storeSessionStorage(this)" 
+                alt="Samsung S22">
+            <img src="images/samsungs21.jpg" name="Samsung S21" id="itemSix" class="pics" 
+                onmouseover="growSix()" onmouseleave="shrinkSix()" 
+                onclick="display(this), samsungs21Desc(), storeSessionStorage(this)" 
+                alt="Samsung S21">
+            <img src="images/samsungs20.jpg" name="Samsung S20" id="itemSeven" class="pics" 
+                onmouseover="growSeven()" onmouseleave="shrinkSeven()" 
+                onclick="display(this), samsungs20Desc(), storeSessionStorage(this)" 
+                alt="Samsung S20">
+            <img src="images/google6.jpg" name="Google 6" id="itemEight" class="pics" 
+                onmouseover="growEight()" onmouseleave="shrinkEight()" 
+                onclick="display(this), google6Desc(), storeSessionStorage(this)" 
+                alt="Google Pixel 6">
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p id="totalPrice">Total: $0.00 </p>
+    </footer>
+</body>
+</html>

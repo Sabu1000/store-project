@@ -1,0 +1,11 @@
+node server.js - starts the server
+
+
+
+Open MSQL
+Enter password
+USE phone_store; 
+SELECT * FROM orders;
+
+
+DELETE FROM orders;
